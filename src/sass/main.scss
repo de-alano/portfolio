@@ -1,0 +1,14 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/animations';
+@import 'base/typography';
+@import 'base/utils';
+
+@import 'sections/hero';
+@import 'sections/about';
+@import 'sections/skills';
+@import 'sections/projects';
+@import 'sections/contact';
