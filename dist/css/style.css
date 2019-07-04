@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.hero {
+  position: relative;
+  background-color: #263137;
+  display: flex;
+  flex-direction: column; }
+  .hero__header {
+    position: relative; }
+  .hero__brand {
+    top: .5rem;
+    left: 1rem;
+    position: absolute; }
+  .hero__logo {
+    width: 10rem; }
+  .hero__hamburger {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .hero__hamburger-line {
+    display: block;
+    margin-bottom: .7rem;
+    width: 3rem;
+    height: 2px;
+    background-color: #00a9b9; }
+  .hero__hamburger-line--middle {
+    width: 4rem; }
+
+.top {
+  height: 60%;
+  background-color: #3c494f;
+  border-bottom: 3px solid rgba(38, 49, 55, 0.4); }
+
+.bottom {
+  height: 40%; }
+
+.about {
+  background-color: #d7e6e6; }
+
+.skills {
+  background-color: #263137; }
+
+.projects {
+  background-color: #d7e6e6; }
+
+.contact {
+  background-color: #263137; }
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #d7e6e6; }
+
+#fp-nav ul li .fp-tooltip {
+  font-family: "Montserrat", sans-serif; }
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  background: #00a9b9; }
+
+#fp-nav.fp-right {
+  right: 3rem; }

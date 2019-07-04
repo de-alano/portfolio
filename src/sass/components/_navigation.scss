@@ -1,0 +1,19 @@
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: $color-tertiary;
+}
+
+#fp-nav ul li .fp-tooltip {
+    font-family: $font-secondary;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    background: $color-primary;
+}
+
+#fp-nav.fp-right {
+    right: 3rem;
+}
