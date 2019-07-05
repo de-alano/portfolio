@@ -1,23 +1,27 @@
-/* This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/> */
-
-new fullpage('#fullpage', {
-	autoScrolling: true,
-	navigation: true,
-	navigationTooltips: ['Home', 'About Me', 'Skills', 'Projects', 'Contact'],
-	showActiveTooltip: true,
-	scrollingSpeed: 800
-});
-
-//methods
-// fullpage_api.setAllowScrolling(false);
+var mySwiper = new Swiper('.swiper-container', {
+	// Optional parameters
+	direction: 'vertical',
+	loop: false,
+	speed: 1000,
+	mousewheel: true,
+	keyboard: {
+		enabled: true,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		renderBullet: function (index, className) {
+			var section = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-section');
+			return '<span class="' + className + '">' + section + '</span>';
+		},
+		clickable: true
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		768: {
+			direction: 'horizontal',
+		}
+	}
+})

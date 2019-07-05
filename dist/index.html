@@ -7,49 +7,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alan Dominiczak | Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:200,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="fullpage">
-        <section class="hero section" id="hero" data-anchor="home">
-            <div class="top">
-                <header class="hero__header">
-                    <a href="index.html" class="hero__brand">
-                        <img src="images/icons/logo.svg" alt="Alan Dominiczak Logo" class="hero__logo">
-                    </a>
-                    <a href="#" class="hero__hamburger">
-                        <span class="hero__hamburger-line"></span>
-                        <span class="hero__hamburger-line hero__hamburger-line--middle"></span>
-                        <span class="hero__hamburger-line"></span>
-                    </a>
-                </header>
-            </div>
-            <div class="bottom">
+    <div id="fullpage" class="swiper-container swiper-container-vertical">
+        <div class="swiper-wrapper">
+            <section class="hero swiper-slide" id="hero" data-anchor="home" data-section="Home">
+                <div class="top">
+                    <header class="hero__header">
+                        <a href="index.html" class="hero__brand">
+                            <img src="images/icons/logo.svg" alt="Alan Dominiczak Logo" class="hero__logo">
+                        </a>
+                        <a href="#" class="hero__hamburger">
+                            <span class="hero__hamburger-line"></span>
+                            <span class="hero__hamburger-line hero__hamburger-line--middle"></span>
+                            <span class="hero__hamburger-line"></span>
+                        </a>
+                    </header>
+                </div>
+                <div class="bottom">
 
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <section class="about section" id="about" data-anchor="about-me">
-            <h1>Section About Me</h1>
-        </section>
+            <section class="about swiper-slide" id="about" data-anchor="about-me" data-section="About Me">
 
-        <section class="skills section" id="skills" data-anchor="my-skills">
-            <h1>Section Skills</h1>
-        </section>
+            </section>
 
-        <section class="projects section" id="projects" data-anchor="my-projects">
-            <h1>Section Projects</h1>
-        </section>
+            <section class="skills swiper-slide" id="skills" data-anchor="my-skills" data-section="Skills">
 
-        <section class="contact section" id="contact" data-anchor="in-touch">
-            <h1>Section Contact</h1>
-        </section>
+            </section>
+
+            <section class="projects swiper-slide" id="projects" data-anchor="my-projects" data-section="Projects">
+
+            </section>
+
+            <section class="contact swiper-slide" id="contact" data-anchor="in-touch" data-section="Contact">
+
+            </section>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
 
 
-    <script src="js/libs/fullpage.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
