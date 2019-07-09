@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alan Dominiczak | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat:200,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Montserrat:200,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="fullpage" class="swiper-container swiper-container-vertical">
+    <div id="fullpage" class="swiper-container swiper-container-h">
         <div class="swiper-wrapper">
-            <section class="hero swiper-slide" id="hero" data-anchor="home" data-section="Home">
+            <!-- HERO SECTION -->
+            <section class="hero swiper-slide" id="hero" data-section="Home">
                 <div class="top">
                     <header class="hero__header">
                         <a href="index.html" class="hero__brand">
@@ -26,30 +27,114 @@
                             <span class="hero__hamburger-line"></span>
                         </a>
                     </header>
+                    <div class="hero__slogan">
+                        <h1 class="hero__slogan-text">Just</h1>
+                        <h1 class="hero__slogan-text"><span class="hero__slogan-text--gradient">code</span> it</h1>
+                    </div>
                 </div>
+
+
                 <div class="bottom">
+                    <div class="hero__caption-wrapper">
+                        <h2 class="hero__caption">Alan Dominiczak</h2>
+                        <h3 class="hero__caption hero__caption--prof">Junior Front-End Developer</h3>
+                        <button class="hero__btn">Let's code</button>
+                    </div>
+                    <div class="hero__socials">
+                        <a href="https://github.com/de-alano" class="hero__social-link" target="_blank">
+                            <img src="images/icons/github.svg" alt="Github" class="hero__social-icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/alan-dominiczak-523462167/" class="hero__social-link"
+                            target="_blank">
+                            <img src="images/icons/linkedin.svg" alt="LinkedIn" class="hero__social-icon">
+                        </a>
+                        <span class="hero__social-line">&nbsp;</span>
+                        <a href="https://www.facebook.com/alan.dominiczak" class="hero__social-link" target="_blank">
+                            <img src="images/icons/facebook.svg" alt="Facebook" class="hero__social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/de_alano/" class="hero__social-link" target="_blank">
+                            <img src="images/icons/instagram.svg" alt="Instagram" class="hero__social-icon">
+                        </a>
+                    </div>
+                </div>
 
+                <div class="hero__photo-container">
+                    <img src="images/header-image.png" alt="" class="hero__photo">
+                </div>
+
+                <img src="images/icons/circle-blue.svg" alt="Gradient Circle"
+                    class="hero__circle-gradient hero__circle-gradient--1">
+                <img src="images/icons/circle-grey.svg" alt="Gradient Circle"
+                    class="hero__circle-gradient hero__circle-gradient--2">
+                <img src="images/icons/circle-grey.svg" alt="Gradient Circle"
+                    class="hero__circle-gradient hero__circle-gradient--3">
+                <!-- END OF HERO SECTION -->
+
+            </section>
+
+            <section class="about swiper-slide" id="about" data-section="About Me">
+
+            </section>
+
+            <section class="skills swiper-slide" id="skills" data-section="Skills">
+
+            </section>
+
+            <section class="projects swiper-slide" id="projects" data-section="Projects">
+                <div class="project swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-silde">
+                            <h3 class="project__title">Weather App</h3>
+                            <div class="project__demo">
+                                <img src="images/weather-desktop.png" alt=""
+                                    class="project__image project__image--desktop">
+                                <img src="" alt="" class="project__image project__image--mobile">
+                            </div>
+                            <h4 class="project__description">Check weather in your city</h4>
+                            <div class="project__links">
+                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-silde">
+                            <h3 class="project__title">Weather App</h3>
+                            <div class="project__demo">
+                                <img src="images/weather-desktop.png" alt=""
+                                    class="project__image project__image--desktop">
+                                <img src="" alt="" class="project__image project__image--mobile">
+                            </div>
+                            <h4 class="project__description">Check weather in your city</h4>
+                            <div class="project__links">
+                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-silde">
+                            <h3 class="project__title">Weather App</h3>
+                            <div class="project__demo">
+                                <img src="images/weather-desktop.png" alt=""
+                                    class="project__image project__image--desktop">
+                                <img src="" alt="" class="project__image project__image--mobile">
+                            </div>
+                            <h4 class="project__description">Check weather in your city</h4>
+                            <div class="project__links">
+                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
                 </div>
             </section>
 
-            <section class="about swiper-slide" id="about" data-anchor="about-me" data-section="About Me">
-
-            </section>
-
-            <section class="skills swiper-slide" id="skills" data-anchor="my-skills" data-section="Skills">
-
-            </section>
-
-            <section class="projects swiper-slide" id="projects" data-anchor="my-projects" data-section="Projects">
-
-            </section>
-
-            <section class="contact swiper-slide" id="contact" data-anchor="in-touch" data-section="Contact">
+            <section class="contact swiper-slide" id="contact" data-section="Contact">
 
             </section>
         </div>
 
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination-h"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>

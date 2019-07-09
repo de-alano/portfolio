@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiper-container-h', {
 	// Optional parameters
 	direction: 'vertical',
 	loop: false,
@@ -8,7 +8,7 @@ var mySwiper = new Swiper('.swiper-container', {
 		enabled: true,
 	},
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.swiper-pagination-h',
 		renderBullet: function (index, className) {
 			var section = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-section');
 			return '<span class="' + className + '">' + section + '</span>';
@@ -25,3 +25,12 @@ var mySwiper = new Swiper('.swiper-container', {
 		}
 	}
 })
+
+var swiperV = new Swiper('.swiper-container-v', {
+	direction: 'vertical',
+	// spaceBetween: 50,
+	pagination: {
+		el: '.swiper-pagination-v',
+		clickable: true,
+	},
+});
