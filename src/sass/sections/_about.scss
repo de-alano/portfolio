@@ -1,3 +1,115 @@
 .about {
+    position: relative;
     background-color: $color-secondary-light;
+    display: flex;
+    overflow: hidden;
+
+    &__title {
+        position: absolute;
+        top: 0;
+        right: 13%;
+        font-size: 10rem;
+        letter-spacing: 5px;
+        color: rgba($color-secondary-dark, .4);
+
+    }
+
+    &__general {
+        width: 44%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__personal {
+        width: 44%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__photo-container {
+        width: 50%;
+        
+  
+    }
+
+    &__photo {
+        width: 100%;
+        height: 100%;
+  
+    }
+
+    &__text {
+        padding: 5rem 4rem 0 4rem;
+        text-align: justify;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        font-family: serif;
+        color: $color-tertiary;
+        font-family: $font-secondary;
+    }
+
+    &__personal-table {
+        width: 80%;
+    }
+
+    &__personal-pair {
+        line-height: 2;
+        font-family: $font-secondary;
+        font-size: 1.6rem;
+    }
+
+    &__personal-key {
+        color: $color-white;
+        width: 50%;
+    }
+
+    &__personal-value {
+        color: $color-primary;
+        width: 50%;
+    }
+
+    &__cv {
+        margin-top: 7rem;
+        padding: 1rem 2rem;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        color: $color-white;
+        font-family: $font-secondary;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        text-decoration: none;
+        cursor: pointer;
+        border: 1px solid $color-secondary-dark;
+        background-color: transparent;
+        transition: background-color .6s ease-out;
+        border-radius: 2rem;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+
+    &__circle-gradient {
+        position: absolute;
+
+        &--grey {
+            width: 15rem;
+            bottom: -4rem;
+            right: 20%;
+            transform: rotate(-45deg);
+        }
+
+        &--blue {
+            width: 12rem;
+            top: -3rem;
+            left: -3rem;
+            transform: rotate(45deg);
+        }
+    }
 }

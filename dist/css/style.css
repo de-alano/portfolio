@@ -183,7 +183,85 @@ body {
   justify-content: space-around; }
 
 .about {
-  background-color: #3c494f; }
+  position: relative;
+  background-color: #3c494f;
+  display: flex;
+  overflow: hidden; }
+  .about__title {
+    position: absolute;
+    top: 0;
+    right: 13%;
+    font-size: 10rem;
+    letter-spacing: 5px;
+    color: rgba(38, 49, 55, 0.4); }
+  .about__general {
+    width: 44%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .about__personal {
+    width: 44%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .about__photo-container {
+    width: 50%; }
+  .about__photo {
+    width: 100%;
+    height: 100%; }
+  .about__text {
+    padding: 5rem 4rem 0 4rem;
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: serif;
+    color: #d7e6e6;
+    font-family: "Montserrat", sans-serif; }
+  .about__personal-table {
+    width: 80%; }
+  .about__personal-pair {
+    line-height: 2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem; }
+  .about__personal-key {
+    color: #ffffff;
+    width: 50%; }
+  .about__personal-value {
+    color: #00a9b9;
+    width: 50%; }
+  .about__cv {
+    margin-top: 7rem;
+    padding: 1rem 2rem;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #263137;
+    background-color: transparent;
+    transition: background-color .6s ease-out;
+    border-radius: 2rem; }
+    .about__cv:hover {
+      background-color: #00a9b9; }
+  .about__circle-gradient {
+    position: absolute; }
+    .about__circle-gradient--grey {
+      width: 15rem;
+      bottom: -4rem;
+      right: 20%;
+      transform: rotate(-45deg); }
+    .about__circle-gradient--blue {
+      width: 12rem;
+      top: -3rem;
+      left: -3rem;
+      transform: rotate(45deg); }
 
 .skills {
   background-color: #263137; }
