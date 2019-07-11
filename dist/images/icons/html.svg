@@ -1,1 +1,9 @@
-<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" class="svg-inline--fa fa-html5 fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="175" viewBox="0 0 150 175">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d7e6e6"/>
+      <stop offset="1" stop-color="#00a9b9"/>
+    </linearGradient>
+  </defs>
+  <path id="html5-brands" d="M0,32,13.633,186.609,74.8,207l61.563-20.391L150,32ZM120.391,81.961h-71.8l1.6,19.3h68.594l-5.312,57.969L75.234,169.773v.117H74.8L36.25,159.227l-2.344-29.609H52.539L53.906,144.5l20.9,5.664L95.781,144.5l2.344-24.3H32.93l-5-56.875h94.18Z" transform="translate(0 -32)" fill="url(#linear-gradient)"/>
+</svg>

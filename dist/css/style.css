@@ -188,13 +188,6 @@ body {
   background-color: #3c494f;
   display: flex;
   overflow: hidden; }
-  .about__title {
-    position: absolute;
-    top: 0;
-    right: 13%;
-    font-size: 10rem;
-    letter-spacing: 5px;
-    color: rgba(38, 49, 55, 0.4); }
   .about__general {
     width: 44%;
     height: 100%;
@@ -289,7 +282,41 @@ body {
       transform: rotate(45deg); }
 
 .skills {
-  background-color: #263137; }
+  background-color: #263137;
+  display: flex;
+  align-items: center; }
+  .skills .container {
+    width: 88%;
+    max-width: 120rem;
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+    justify-items: center;
+    align-items: center; }
+
+.skill {
+  height: 100%; }
+  .skill__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    height: 40%; }
+  .skill__icon {
+    width: 5rem; }
+  .skill__name {
+    font-family: "Montserrat", sans-serif;
+    color: #d7e6e6;
+    font-size: 1.6rem;
+    letter-spacing: 2px; }
+  .skill__description {
+    font-size: 1.4rem;
+    text-align: justify;
+    font-weight: 200;
+    color: rgba(215, 230, 230, 0.5);
+    height: 60%; }
 
 .projects {
   background-color: #3c494f; }
@@ -404,3 +431,16 @@ body {
     box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0.7); }
   .swiper-slide-content {
     right: 25%; } }
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 13%;
+  font-size: 10rem;
+  letter-spacing: 5px; }
+
+.about__title {
+  color: rgba(38, 49, 55, 0.4); }
+
+.skills__title {
+  color: rgba(60, 73, 79, 0.4); }

@@ -4,16 +4,6 @@
     display: flex;
     overflow: hidden;
 
-    &__title {
-        position: absolute;
-        top: 0;
-        right: 13%;
-        font-size: 10rem;
-        letter-spacing: 5px;
-        color: rgba($color-secondary-dark, .4);
-
-    }
-
     &__general {
         width: 44%;
         height: 100%;
