@@ -188,6 +188,7 @@ body {
     justify-content: center;
     align-items: center; }
   .about__personal {
+    position: relative;
     width: 44%;
     height: 100%;
     display: flex;
@@ -260,6 +261,15 @@ body {
       top: -3rem;
       left: -3rem;
       transform: rotate(45deg); }
+  .about__personal-icons {
+    position: absolute;
+    width: 100%;
+    bottom: 1.5rem;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly; }
+  .about__personal-icon {
+    width: 10rem; }
 
 .skills {
   background-color: #263137;

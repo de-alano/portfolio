@@ -14,6 +14,7 @@
     }
 
     &__personal {
+        position: relative;
         width: 44%;
         height: 100%;
         display: flex;
@@ -119,5 +120,18 @@
             left: -3rem;
             transform: rotate(45deg);
         }
+    }
+
+    &__personal-icons {
+        position: absolute;
+        width: 100%;
+        bottom: 1.5rem;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__personal-icon {
+        width: 10rem;
     }
 }
