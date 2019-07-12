@@ -6,7 +6,7 @@
     // flex-direction: column;
 
     &__header {
-        // position: relative;
+        position: relative;
     }
 
     &__brand {
@@ -27,7 +27,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 10;
+        z-index: 100;
     }
 
     &__hamburger-line {
@@ -95,18 +95,8 @@
 
     &__btn {
         position: relative;
-        padding: 1rem 2rem;
-        font-family: $font-primary;
-        text-transform: uppercase;
-        border: none;
         background-image: linear-gradient(to right bottom, $color-primary, $color-tertiary);
         background-size: 100%;
-        color: $color-white;
-        font-family: $font-secondary;
-        font-size: 2rem;
-        letter-spacing: 1px;
-        border-radius: 2rem;
-        cursor: pointer;
         z-index: 10;
         filter: brightness(90%);
         transition: filter .6s ease-out;

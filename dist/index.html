@@ -38,7 +38,7 @@
                     <div class="hero__caption-wrapper">
                         <h2 class="hero__caption">Alan Dominiczak</h2>
                         <h3 class="hero__caption hero__caption--prof">Junior Front-End Developer</h3>
-                        <button class="hero__btn">Let's code</button>
+                        <button class="hero__btn btn btn--primary">Let's code</button>
                     </div>
                     <div class="hero__socials">
                         <a href="https://github.com/de-alano" class="hero__social-link" target="_blank">
@@ -114,7 +114,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="" class="about__cv">Download CV</a>
+                    <a href="" class="about__cv btn btn--secondary">Download CV</a>
                 </div>
 
                 <img src="images/icons/circle-blue.svg" alt="Gradient Circle"
@@ -264,9 +264,37 @@
                 </div>
             </section>
 
+            <!-- CONTACT SECTION -->
             <section class="contact swiper-slide" id="contact" data-section="Contact">
-
+                <h4 class="contact__title section-title">Contact</h4>
+                <img src="images/icons/paper-plane.svg" alt="Paper Plane" class="contact__icon">
+                <div class="contact__form">
+                    <h2 class="contact__heading">Get in touch</h2>
+                    <form action="#" class="form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                            <label for="name" class="form__label">Full Name</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="E-mail" id="email" required>
+                            <label for="email" class="form__label">Email</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Subject" id="subject" required>
+                            <label for="subject" class="form__label">Subject</label>
+                        </div>
+                        <div class="form__group">
+                            <textarea rows="8" class="form__area" id="message" placeholder="Message"
+                                required></textarea>
+                            <label for="message" class="form__label">Message</label>
+                        </div>
+                        <div class="form__group">
+                            <button type="submit" class="form__btn btn btn--secondary">Send e-mail</button>
+                        </div>
+                    </form>
+                </div>
             </section>
+            <!-- END OF CONTACT SECTION -->
         </div>
 
         <div class="swiper-pagination swiper-pagination-h"></div>

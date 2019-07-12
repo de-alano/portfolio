@@ -27,7 +27,7 @@ var mySwiper = new Swiper('.swiper-container-h', {
 })
 
 var swiperV = new Swiper('.swiper-container-v', {
-	direction: 'vertical',
+	direction: 'hortizontal',
 	// spaceBetween: 50,
 	pagination: {
 		el: '.swiper-pagination-v',

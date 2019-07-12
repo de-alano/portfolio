@@ -1,3 +1,15 @@
 .contact {
+    position: relative;
     background-color: $color-secondary-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 3rem;
+        width: 40rem;
+        transform: translateY(-50%);
+    }
 }

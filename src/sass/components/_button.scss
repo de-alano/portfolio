@@ -1,0 +1,21 @@
+.btn {
+    padding: 1rem 2rem;
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: $color-white;
+    letter-spacing: 1px;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.btn--primary {
+    border: none;
+    font-size: 2rem;
+}
+
+.btn--secondary {
+    border: 1px solid $color-secondary-dark;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
