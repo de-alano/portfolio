@@ -12,21 +12,42 @@
 </head>
 
 <body>
+
+    <header class="header">
+        <a href="index.html" class="header__brand">
+            <img src="images/icons/logo.svg" alt="Alan Dominiczak Logo" class="header__logo">
+        </a>
+        <div class="header__hamburger">
+            <span class="header__hamburger-line header__hamburger-line--1"></span>
+            <span class="header__hamburger-line header__hamburger-line--2"></span>
+            <span class="header__hamburger-line header__hamburger-line--3"></span>
+        </div>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#hero" class="navigation__link">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#about" class="navigation__link">About Me</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#skills" class="navigation__link">Skills</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#projects" class="navigation__link">Projects</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#contact" class="navigation__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <div id="fullpage" class="swiper-container swiper-container-h">
         <div class="swiper-wrapper">
             <!-- HERO SECTION -->
             <section class="hero swiper-slide" id="hero" data-section="Home">
                 <div class="top">
-                    <header class="hero__header">
-                        <a href="index.html" class="hero__brand">
-                            <img src="images/icons/logo.svg" alt="Alan Dominiczak Logo" class="hero__logo">
-                        </a>
-                        <a href="#" class="hero__hamburger">
-                            <span class="hero__hamburger-line"></span>
-                            <span class="hero__hamburger-line hero__hamburger-line--middle"></span>
-                            <span class="hero__hamburger-line"></span>
-                        </a>
-                    </header>
                     <div class="hero__slogan">
                         <h1 class="hero__slogan-text">Just</h1>
                         <h1 class="hero__slogan-text"><span class="hero__slogan-text--glowing">c</span><span
@@ -127,8 +148,6 @@
                         <img src="images/icons/communicative.svg" alt="Communicative Icon" class="about__personal-icon">
                     </div>
                 </div>
-                <img src="images/icons/circle-blue.svg" alt="Gradient Circle"
-                    class="about__circle-gradient about__circle-gradient--blue">
             </section>
             <!-- END OF ABOUT ME SECTION -->
 
@@ -224,51 +243,45 @@
             <!-- END OF SKILLS SECTION -->
 
             <section class="projects swiper-slide" id="projects" data-section="Projects">
-                <div class="project swiper-container swiper-container-v">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-silde">
-                            <h3 class="project__title">Weather App</h3>
-                            <div class="project__demo">
-                                <img src="images/weather-desktop.png" alt=""
-                                    class="project__image project__image--desktop">
-                                <img src="" alt="" class="project__image project__image--mobile">
-                            </div>
-                            <h4 class="project__description">Check weather in your city</h4>
-                            <div class="project__links">
-                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
-                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
-                            </div>
+                <div class="project">
+                    <div class="swiper-silde">
+                        <h3 class="project__title">Weather App</h3>
+                        <div class="project__demo">
+                            <img src="images/weather-desktop.png" alt="" class="project__image project__image--desktop">
+                            <img src="" alt="" class="project__image project__image--mobile">
                         </div>
-
-                        <div class="swiper-silde">
-                            <h3 class="project__title">Weather App</h3>
-                            <div class="project__demo">
-                                <img src="images/weather-desktop.png" alt=""
-                                    class="project__image project__image--desktop">
-                                <img src="" alt="" class="project__image project__image--mobile">
-                            </div>
-                            <h4 class="project__description">Check weather in your city</h4>
-                            <div class="project__links">
-                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
-                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-silde">
-                            <h3 class="project__title">Weather App</h3>
-                            <div class="project__demo">
-                                <img src="images/weather-desktop.png" alt=""
-                                    class="project__image project__image--desktop">
-                                <img src="" alt="" class="project__image project__image--mobile">
-                            </div>
-                            <h4 class="project__description">Check weather in your city</h4>
-                            <div class="project__links">
-                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
-                                <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
-                            </div>
+                        <h4 class="project__description">Check weather in your city</h4>
+                        <div class="project__links">
+                            <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                            <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
                         </div>
                     </div>
-                    <div class="swiper-pagination swiper-pagination-v"></div>
+
+                    <div class="swiper-silde">
+                        <h3 class="project__title">Weather App</h3>
+                        <div class="project__demo">
+                            <img src="images/weather-desktop.png" alt="" class="project__image project__image--desktop">
+                            <img src="" alt="" class="project__image project__image--mobile">
+                        </div>
+                        <h4 class="project__description">Check weather in your city</h4>
+                        <div class="project__links">
+                            <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                            <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-silde">
+                        <h3 class="project__title">Weather App</h3>
+                        <div class="project__demo">
+                            <img src="images/weather-desktop.png" alt="" class="project__image project__image--desktop">
+                            <img src="" alt="" class="project__image project__image--mobile">
+                        </div>
+                        <h4 class="project__description">Check weather in your city</h4>
+                        <div class="project__links">
+                            <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                            <a href="" class="project__link"><img src="" alt="" class="project__link-icon"></a>
+                        </div>
+                    </div>
                 </div>
             </section>
 

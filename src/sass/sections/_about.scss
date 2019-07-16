@@ -55,12 +55,12 @@
         background-position: center;
 
         &--front {
-            background-image: url('../images/profile-black.jpg');
+            background-image: url('../images/profile.jpg');
         }
 
         &--back {
             transform: rotateY(180deg);
-            background-image: url('../images/profile.jpg');
+            background-image: url('../images/profile-black.jpg');
         }
   
     }

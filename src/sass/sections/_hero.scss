@@ -1,46 +1,11 @@
 .hero {
-    position: relative;
+    // position: relative;
     background-color: $color-secondary-dark;
     overflow: hidden;
     // display: flex;
     // flex-direction: column;
 
-    &__header {
-        position: relative;
-    }
-
-    &__brand {
-        top: .5rem;
-        left: 1rem;
-        position: absolute;
-    }
-
-    &__logo {
-        width: 10rem;
-    }
-
-    &__hamburger {
-        position: fixed;
-        top: 1.5rem;
-        right: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 100;
-    }
-
-    &__hamburger-line {
-        display: block;
-        margin-bottom: .7rem;
-        width: 3rem;
-        height: 2px;
-        background-color: $color-primary;
-    }
-
-    &__hamburger-line--middle {
-        width: 4rem;
-    }
+    
 
     &__slogan {
         // position: absolute;

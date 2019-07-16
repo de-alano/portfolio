@@ -26,12 +26,21 @@ var mySwiper = new Swiper('.swiper-container-h', {
 	}
 })
 
-var swiperV = new Swiper('.swiper-container-v', {
-	direction: 'hortizontal',
-	// spaceBetween: 50,
-	pagination: {
-		el: '.swiper-pagination-v',
-		clickable: true,
-	},
+
+
+// HAMBURGER MENU
+const menuIcon = document.querySelector('.header__hamburger');
+const nav = document.querySelector('.navigation');
+const navLinks = [...document.querySelectorAll('.navigation__link')];
+console.log(navLinks);
+
+menuIcon.addEventListener('click', () => {
+	menuIcon.classList.toggle('change');
+	nav.classList.toggle('change');
 });
 
+// navLinks.forEach(link => {
+// 	link.addEventListener('click', () => {
+// 		nav.classList.remove('change');
+// 	});
+// });
