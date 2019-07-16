@@ -26,7 +26,12 @@ var mySwiper = new Swiper('.swiper-container-h', {
 	}
 })
 
-
+// PROJECTS SLIDER
+const flkty = new Flickity('.projects-gallery', {
+	// options
+	cellAlign: 'left',
+	contain: true,
+});
 
 // HAMBURGER MENU
 const menuIcon = document.querySelector('.header__hamburger');
