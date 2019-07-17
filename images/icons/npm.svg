@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="58.333" viewBox="0 0 150 58.333">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d7e6e6"/>
+      <stop offset="1" stop-color="#00a9b9"/>
+    </linearGradient>
+  </defs>
+  <path id="npm-brands" d="M75,193.333H66.667V176.667H75ZM150,160v50H75v8.333H41.667V210H0V160ZM41.667,168.333H8.333v33.333H25v-25h8.333v25h8.333Zm41.667,0H50V210H66.667v-8.333H83.333Zm58.333,0h-50v33.333h16.667v-25h8.333v25H125v-25h8.333v25h8.333Z" transform="translate(0 -160)" fill="url(#linear-gradient)"/>
+</svg>

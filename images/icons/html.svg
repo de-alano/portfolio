@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="175" viewBox="0 0 150 175">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d7e6e6"/>
+      <stop offset="1" stop-color="#00a9b9"/>
+    </linearGradient>
+  </defs>
+  <path id="html5-brands" d="M0,32,13.633,186.609,74.8,207l61.563-20.391L150,32ZM120.391,81.961h-71.8l1.6,19.3h68.594l-5.312,57.969L75.234,169.773v.117H74.8L36.25,159.227l-2.344-29.609H52.539L53.906,144.5l20.9,5.664L95.781,144.5l2.344-24.3H32.93l-5-56.875h94.18Z" transform="translate(0 -32)" fill="url(#linear-gradient)"/>
+</svg>
