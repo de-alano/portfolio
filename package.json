@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://github.com/de-alano/portfolio",
   "scripts": {
     "watch:sass": "node-sass src/sass/main.scss dist/css/style.css && node-sass src/sass/pages/thank-you/main.scss dist/css/thank-you.css -w"
   },
@@ -10,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
