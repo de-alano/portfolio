@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass src/sass/main.scss dist/css/style.css -w"
+    "watch:sass": "node-sass src/sass/main.scss dist/css/style.css && node-sass src/sass/pages/thank-you/main.scss dist/css/thank-you.css -w"
   },
   "author": "Alan Dominiczak",
   "license": "ISC",
