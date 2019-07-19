@@ -659,7 +659,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #263137;
+  background: radial-gradient(circle, #263137 0%, #3c494f 30%, #3c494f 31%, #263137 60%, #263137 100%);
   z-index: 100;
   position: fixed;
   top: 0;
