@@ -1,16 +1,6 @@
 .hero {
-    // position: relative;
     background-color: $color-secondary-dark;
-    overflow: hidden;
-    // display: flex;
-    // flex-direction: column;
-
-    // @media only screen and (max-width: $bp-900) {
-    //     height: 100vh;
-    // }
-
-
-    
+    overflow: hidden;    
 
     &__slogan {
         height: 100%;
@@ -20,6 +10,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
     }
 
     &__slogan-text {
@@ -29,6 +20,10 @@
         font-weight: 900;
         letter-spacing: 3px;
         color: $color-white;
+
+        @media only screen and (max-width: $bp-900) {
+            font-size: 6.5rem;
+        }
     }
 
     &__slogan-text--gradient {
@@ -38,7 +33,7 @@
     }
 
     &__caption-wrapper {
-        margin: 2.5rem 0 2.5rem 3rem;
+        margin: 3.5rem 0 2.5rem 3rem;
         font-family: $font-secondary;
         color: $color-white;
         text-align: center;
@@ -49,6 +44,10 @@
         font-size: 3rem;
         margin-bottom: .3rem;
         letter-spacing: 2px;
+
+        @media only screen and (max-width: $bp-900) {
+            font-size: 2.5rem;
+        }
     }
 
     &__caption--prof {
@@ -57,6 +56,10 @@
         font-weight: 200;
         margin-bottom: 3rem;
         letter-spacing: 1px;
+
+        @media only screen and (max-width: $bp-900) {
+            font-size: 1.3rem;
+        }
     }
 
     &__btn {
@@ -100,6 +103,11 @@
         width: 40%;
         z-index: 5;
 
+        @media only screen and (max-width: $bp-900) {
+            width: 60%;
+            right: -5%;
+        }
+
         &::before {
             content: '';
             display: block;
@@ -119,6 +127,11 @@
             @media only screen and (max-width: $bp-1200) {
                 width: 45rem;
                 height: 45rem;
+            }
+
+            @media only screen and (max-width: $bp-900) {
+                width: 35rem;
+                height: 35rem;
             }
         }
     }
@@ -151,6 +164,10 @@
         filter: brightness(50%);
         transition: filter .3s ease-out;
 
+        @media only screen and (max-width: $bp-900) {
+            width: 1.8rem;
+        }
+
         &:hover {
             filter: brightness(100%);
         }
@@ -172,12 +189,22 @@
             left: -3rem;
             width: 13rem;
             transform: rotate(-45deg);
+
+            @media only screen and (max-width: $bp-900) {
+                bottom: 40%;
+                width: 10rem;
+            }
         }
 
         &--2 {
             top: 5%;
             left: 40%;
             width: 15rem;
+
+            @media only screen and (max-width: $bp-900) {
+                left: 50%;
+                width: 12rem;
+            }
         }
 
         &--3 {
@@ -185,6 +212,10 @@
             right: -3rem;
             width: 12rem;
             transform: rotate(45deg);
+
+            @media only screen and (max-width: $bp-900) {
+                display: none;
+            }
         }
     }
 }
@@ -194,6 +225,7 @@
     background-color: $color-secondary-light;
     border-bottom: 3px solid rgba($color-secondary-dark, .4);
     position: relative;
+
 }
 
 .bottom {
@@ -202,4 +234,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    @media only screen and (max-width: $bp-900) {
+        justify-content: space-between;
+    }
 }

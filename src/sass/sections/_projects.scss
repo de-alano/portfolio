@@ -7,22 +7,36 @@
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: $bp-900) {
+        justify-content: center;
+    }
 
     &__title {
         text-align: center;
         font-size: 3rem;
-        // text-transform: uppercase;
         color: $color-primary;
         letter-spacing: 2px;
+
+        @media only screen and (max-width: $bp-900) {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
     }
 
     &__description {
         color: $color-tertiary;
         font-size: 1.5rem;
-        // font-weight: 200;
+        font-weight: 200;
         letter-spacing: 1px;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-900) {
+            font-size: 1.3rem;
+        }
     }
 
     &__demo {
@@ -32,10 +46,18 @@
 
     &__image--desktop {
         width: 50%;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 40%;
+        }
     }
 
     &__image--mobile {
         width: 20%;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 15%;
+        }
     }
 
     &__links {
@@ -51,15 +73,19 @@
         filter: brightness(70%);
         transition: filter .3s ease-out;
 
+        @media only screen and (max-width: $bp-900) {
+            width: 2.5rem;
+        }
+
         &:hover {
             filter: brightness(100%);
         }
     }
 
-    &__icon {
-        position: absolute;
-        width: 15rem;
-        bottom: 0;
-        right: 0;
-    }
+    // &__icon {
+    //     position: absolute;
+    //     width: 15rem;
+    //     bottom: 0;
+    //     right: 0;
+    // }
 }

@@ -4,6 +4,11 @@
     margin-left: 4%;
     // display: flex;
     // align-items: center;
+
+    @media only screen and (max-width: $bp-900) {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .gallery-cell {

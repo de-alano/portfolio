@@ -3,6 +3,12 @@
     background-color: $color-secondary-light;
     display: flex;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-900) {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
     &__general {
         width: 44%;
         height: 100%;
@@ -10,6 +16,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 3rem;
+            height: auto;
+
+        }
     }
 
     &__personal {
@@ -20,6 +35,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 100%;
+            height: auto;
+            position: static;
+            margin-top: -7rem;
+        }
     }
 
     &__photo-container {
@@ -28,6 +50,11 @@
         position: relative;
         height: 27.2rem;
         width: 25.6rem;
+
+        @media only screen and (max-width: $bp-900) {
+            height: 21.76rem;
+            width: 20.48rem;
+        }
 
         &:hover .about__photo--front {
             transform: rotateY(-180deg);
@@ -67,21 +94,36 @@
     &__text {
         padding: 5rem 4rem 0 4rem;
         text-align: justify;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         line-height: 1.5;
         font-family: serif;
         color: $color-tertiary;
         font-family: $font-secondary;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 60%;
+            padding: 0;
+            font-size: 1.3rem;
+        }
     }
 
     &__personal-table {
         width: 80%;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 50%;
+            margin: 0 auto;
+        }
     }
 
     &__personal-pair {
         line-height: 2;
         font-family: $font-secondary;
         font-size: 1.6rem;
+
+        @media only screen and (max-width: $bp-900) {
+            font-size: 1.4rem;
+        }
     }
 
     &__personal-key {
@@ -97,6 +139,10 @@
     &__cv {
         margin-top: 7rem;
         transition: background-color .6s ease-out;
+
+        @media only screen and (max-width: $bp-900) {
+            margin-top: 4rem;
+        }
 
         &:hover {
             background-color: $color-primary;
@@ -132,5 +178,10 @@
 
     &__personal-icon {
         width: 10rem;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 7rem;
+            bottom: 0;
+        }
     }
 }

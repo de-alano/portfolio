@@ -30,12 +30,15 @@ body {
     font-weight: 900;
     letter-spacing: 3px;
     color: #ffffff; }
+    @media only screen and (max-width: 56.25em) {
+      .hero__slogan-text {
+        font-size: 6.5rem; } }
   .hero__slogan-text--gradient {
     background: linear-gradient(to right bottom, #d7e6e6, #00a9b9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .hero__caption-wrapper {
-    margin: 2.5rem 0 2.5rem 3rem;
+    margin: 3.5rem 0 2.5rem 3rem;
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
     text-align: center;
@@ -44,12 +47,18 @@ body {
     font-size: 3rem;
     margin-bottom: .3rem;
     letter-spacing: 2px; }
+    @media only screen and (max-width: 56.25em) {
+      .hero__caption {
+        font-size: 2.5rem; } }
   .hero__caption--prof {
     font-size: 1.5rem;
     color: rgba(215, 230, 230, 0.5);
     font-weight: 200;
     margin-bottom: 3rem;
     letter-spacing: 1px; }
+    @media only screen and (max-width: 56.25em) {
+      .hero__caption--prof {
+        font-size: 1.3rem; } }
   .hero__btn {
     position: relative;
     background-image: linear-gradient(to right bottom, #00a9b9, #d7e6e6);
@@ -82,6 +91,10 @@ body {
     right: 15%;
     width: 40%;
     z-index: 5; }
+    @media only screen and (max-width: 56.25em) {
+      .hero__photo-container {
+        width: 60%;
+        right: -5%; } }
     .hero__photo-container::before {
       content: '';
       display: block;
@@ -101,6 +114,10 @@ body {
         .hero__photo-container::before {
           width: 45rem;
           height: 45rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .hero__photo-container::before {
+          width: 35rem;
+          height: 35rem; } }
   .hero__photo {
     width: 100%;
     height: 100%; }
@@ -117,6 +134,9 @@ body {
     width: 2rem;
     filter: brightness(50%);
     transition: filter .3s ease-out; }
+    @media only screen and (max-width: 56.25em) {
+      .hero__social-icon {
+        width: 1.8rem; } }
     .hero__social-icon:hover {
       filter: brightness(100%); }
   .hero__social-line {
@@ -131,15 +151,26 @@ body {
       left: -3rem;
       width: 13rem;
       transform: rotate(-45deg); }
+      @media only screen and (max-width: 56.25em) {
+        .hero__circle-gradient--1 {
+          bottom: 40%;
+          width: 10rem; } }
     .hero__circle-gradient--2 {
       top: 5%;
       left: 40%;
       width: 15rem; }
+      @media only screen and (max-width: 56.25em) {
+        .hero__circle-gradient--2 {
+          left: 50%;
+          width: 12rem; } }
     .hero__circle-gradient--3 {
       bottom: -3rem;
       right: -3rem;
       width: 12rem;
       transform: rotate(45deg); }
+      @media only screen and (max-width: 56.25em) {
+        .hero__circle-gradient--3 {
+          display: none; } }
 
 .top {
   height: 70%;
@@ -153,12 +184,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+  @media only screen and (max-width: 56.25em) {
+    .bottom {
+      justify-content: space-between; } }
 
 .about {
   position: relative;
   background-color: #3c494f;
   display: flex;
   overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .about {
+      flex-direction: column;
+      justify-content: space-evenly; } }
   .about__general {
     width: 44%;
     height: 100%;
@@ -166,6 +204,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .about__general {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3rem;
+        height: auto; } }
   .about__personal {
     position: relative;
     width: 44%;
@@ -174,12 +219,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .about__personal {
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-top: -7rem; } }
   .about__photo-container {
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 27.2rem;
     width: 25.6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about__photo-container {
+        height: 21.76rem;
+        width: 20.48rem; } }
     .about__photo-container:hover .about__photo--front {
       transform: rotateY(-180deg); }
     .about__photo-container:hover .about__photo--back {
@@ -206,17 +261,29 @@ body {
   .about__text {
     padding: 5rem 4rem 0 4rem;
     text-align: justify;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     font-family: serif;
     color: #d7e6e6;
     font-family: "Montserrat", sans-serif; }
+    @media only screen and (max-width: 56.25em) {
+      .about__text {
+        width: 60%;
+        padding: 0;
+        font-size: 1.3rem; } }
   .about__personal-table {
     width: 80%; }
+    @media only screen and (max-width: 56.25em) {
+      .about__personal-table {
+        width: 50%;
+        margin: 0 auto; } }
   .about__personal-pair {
     line-height: 2;
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about__personal-pair {
+        font-size: 1.4rem; } }
   .about__personal-key {
     color: #ffffff;
     width: 50%; }
@@ -226,6 +293,9 @@ body {
   .about__cv {
     margin-top: 7rem;
     transition: background-color .6s ease-out; }
+    @media only screen and (max-width: 56.25em) {
+      .about__cv {
+        margin-top: 4rem; } }
     .about__cv:hover {
       background-color: #00a9b9; }
   .about__circle-gradient {
@@ -249,6 +319,10 @@ body {
     justify-content: space-evenly; }
   .about__personal-icon {
     width: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about__personal-icon {
+        width: 7rem;
+        bottom: 0; } }
 
 .skills {
   background-color: #263137;
@@ -264,6 +338,12 @@ body {
     grid-row-gap: 5rem;
     justify-items: center;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .skills .container {
+        width: 100%;
+        margin: 0 2rem;
+        grid-column-gap: 3rem;
+        grid-row-gap: 5rem; } }
 
 .skill {
   height: 100%; }
@@ -273,19 +353,33 @@ body {
     align-items: center;
     margin-bottom: 1.5rem;
     height: 40%; }
+    @media only screen and (max-width: 56.25em) {
+      .skill__title {
+        height: 30%;
+        margin-bottom: .5rem; } }
   .skill__icon {
     width: 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .skill__icon {
+        width: 3rem; } }
   .skill__name {
     font-family: "Montserrat", sans-serif;
     color: #d7e6e6;
     font-size: 1.6rem;
     letter-spacing: 2px; }
+    @media only screen and (max-width: 56.25em) {
+      .skill__name {
+        font-size: 1.4rem; } }
   .skill__description {
     font-size: 1.4rem;
     text-align: justify;
     font-weight: 200;
     color: rgba(215, 230, 230, 0.5);
     height: 60%; }
+    @media only screen and (max-width: 56.25em) {
+      .skill__description {
+        font-size: 1.2rem;
+        height: 70%; } }
 
 .projects {
   background-color: #3c494f;
@@ -295,24 +389,43 @@ body {
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .project {
+      justify-content: center; } }
   .project__title {
     text-align: center;
     font-size: 3rem;
     color: #00a9b9;
     letter-spacing: 2px; }
+    @media only screen and (max-width: 56.25em) {
+      .project__title {
+        font-size: 2.5rem;
+        margin-bottom: 3rem; } }
   .project__description {
     color: #d7e6e6;
     font-size: 1.5rem;
-    letter-spacing: 1px; }
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .project__description {
+        font-size: 1.3rem; } }
   .project__demo {
     width: 100%;
     text-align: center; }
   .project__image--desktop {
     width: 50%; }
+    @media only screen and (max-width: 56.25em) {
+      .project__image--desktop {
+        width: 40%; } }
   .project__image--mobile {
     width: 20%; }
+    @media only screen and (max-width: 56.25em) {
+      .project__image--mobile {
+        width: 15%; } }
   .project__links {
     text-align: center; }
   .project__link {
@@ -321,13 +434,11 @@ body {
     width: 3rem;
     filter: brightness(70%);
     transition: filter .3s ease-out; }
+    @media only screen and (max-width: 56.25em) {
+      .project__link-icon {
+        width: 2.5rem; } }
     .project__link-icon:hover {
       filter: brightness(100%); }
-  .project__icon {
-    position: absolute;
-    width: 15rem;
-    bottom: 0;
-    right: 0; }
 
 .contact {
   position: relative;
@@ -341,6 +452,12 @@ body {
     left: 3rem;
     width: 40rem;
     transform: translateY(-50%); }
+    @media only screen and (max-width: 56.25em) {
+      .contact__icon {
+        width: 15rem;
+        top: calc(100% - 17rem);
+        left: calc(100% - 17rem);
+        transform: translateY(0); } }
 
 .swiper-container {
   width: 100%;
@@ -457,6 +574,10 @@ body {
   right: 13%;
   font-size: 10rem;
   letter-spacing: 5px; }
+  @media only screen and (max-width: 56.25em) {
+    .section-title {
+      right: 6rem;
+      font-size: 8rem; } }
 
 .about__title, .projects__title {
   color: rgba(38, 49, 55, 0.4); }
@@ -473,18 +594,30 @@ body {
   letter-spacing: 1px;
   border-radius: 2rem;
   text-decoration: none; }
+  @media only screen and (max-width: 56.25em) {
+    .btn {
+      padding: .8rem 1.5rem; } }
 
 .btn--primary {
   border: none;
   font-size: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .btn--primary {
+      font-size: 1.5rem; } }
 
 .btn--secondary {
   border: 1px solid #263137;
   background-color: transparent;
   font-size: 1.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .btn--secondary {
+      font-size: 1.3rem; } }
 
 .contact__form {
   width: 30%; }
+  @media only screen and (max-width: 56.25em) {
+    .contact__form {
+      width: 60%; } }
 
 .contact__heading {
   margin-bottom: 3rem;
@@ -492,11 +625,17 @@ body {
   font-size: 4rem;
   letter-spacing: 2px;
   color: #00a9b9; }
+  @media only screen and (max-width: 56.25em) {
+    .contact__heading {
+      font-size: 3rem; } }
 
 .form__group {
   text-align: center; }
   .form__group:not(:last-child) {
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .form__group:not(:last-child) {
+        margin-bottom: 1.5rem; } }
 
 .form__input, .form__area {
   font-size: 1.5rem;
@@ -508,6 +647,9 @@ body {
   background-color: transparent;
   border: 1px solid #3c494f;
   transition: border .3s ease-in-out; }
+  @media only screen and (max-width: 56.25em) {
+    .form__input, .form__area {
+      font-size: 1.3rem; } }
   .form__input__area, .form__area__area {
     resize: none; }
   .form__input:focus, .form__area:focus {
@@ -535,7 +677,8 @@ body {
 
 .form__btn {
   border: 1px solid #3c494f;
-  transition: background-color .6s ease-out; }
+  transition: background-color .6s ease-out;
+  outline: none; }
   .form__btn:hover {
     background-color: #00a9b9; }
 
@@ -568,12 +711,15 @@ body {
   width: 100%;
   z-index: 10; }
   .header__brand {
-    top: .5rem;
+    top: 1rem;
     left: 1rem;
     position: absolute;
     z-index: 10; }
   .header__logo {
     width: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__logo {
+        width: 8rem; } }
   .header__hamburger {
     display: none;
     visibility: hidden;
@@ -584,11 +730,14 @@ body {
     height: 3rem;
     z-index: 10;
     cursor: pointer;
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
     background-color: transparent; }
+    @media only screen and (max-width: 56.25em) {
+      .header__hamburger {
+        display: flex;
+        visibility: visible; } }
   .header__hamburger-line {
     width: 100%;
     height: 3px;
@@ -662,6 +811,10 @@ body {
   width: 80%;
   height: 100%;
   margin-left: 4%; }
+  @media only screen and (max-width: 56.25em) {
+    .projects-gallery {
+      width: 100%;
+      margin-left: 0; } }
 
 .gallery-cell {
   width: 100%;

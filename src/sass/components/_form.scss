@@ -2,6 +2,10 @@
 
     &__form {
         width: 30%;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 60%;
+        }
     }
 
     &__heading {
@@ -11,6 +15,10 @@
         font-size: 4rem;
         letter-spacing: 2px;
         color: $color-primary;
+
+        @media only screen and (max-width: $bp-900) {
+            font-size: 3rem;
+        }
     }
 }
 
@@ -20,6 +28,10 @@
         text-align: center;
         &:not(:last-child) {
             margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-900) {
+                margin-bottom: 1.5rem;
+            }
         }
     }
 
@@ -33,6 +45,10 @@
         background-color: transparent;
         border: 1px solid $color-secondary-light;
         transition: border .3s ease-in-out;
+
+        @media only screen and (max-width: $bp-900) {
+            font-size: 1.3rem;
+        }
 
         &__area {
             resize: none;
@@ -60,6 +76,7 @@
         transition: transform .3s ease-in-out;
         text-align-last: left;
     }
+    
 
     &__input:placeholder-shown + &__label, 
     &__area:placeholder-shown + &__label{
@@ -71,6 +88,7 @@
     &__btn {
         border: 1px solid $color-secondary-light;
         transition: background-color .6s ease-out;
+        outline: none;
 
         &:hover {
             background-color: $color-primary;

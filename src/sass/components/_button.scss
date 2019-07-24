@@ -7,15 +7,27 @@
     letter-spacing: 1px;
     border-radius: 2rem;
     text-decoration: none;
+
+    @media only screen and (max-width: $bp-900) {
+        padding: .8rem 1.5rem;
+    }
 }
 
 .btn--primary {
     border: none;
     font-size: 2rem;
+
+    @media only screen and (max-width: $bp-900) {
+        font-size: 1.5rem;
+    }
 }
 
 .btn--secondary {
     border: 1px solid $color-secondary-dark;
     background-color: transparent;
     font-size: 1.5rem;
+
+    @media only screen and (max-width: $bp-900) {
+        font-size: 1.3rem;
+    }
 }

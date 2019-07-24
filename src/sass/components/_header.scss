@@ -7,7 +7,7 @@
         z-index: 10;
 
     &__brand {
-        top: .5rem;
+        top: 1rem;
         left: 1rem;
         position: absolute;
         z-index: 10;
@@ -15,6 +15,10 @@
 
     &__logo {
         width: 10rem;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 8rem;
+        }
     }
 
     &__hamburger {
@@ -27,11 +31,16 @@
         height: 3rem;
         z-index: 10;
         cursor: pointer;
-        display: flex;
+        // display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-end;
         background-color: transparent;
+
+        @media only screen and (max-width: $bp-900) {
+            display: flex;
+            visibility: visible;
+        }
     }
 
     &__hamburger-line {
