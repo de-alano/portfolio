@@ -439,6 +439,14 @@ body {
         width: 2.5rem; } }
     .project__link-icon:hover {
       filter: brightness(100%); }
+  .project__icon {
+    position: absolute;
+    width: 15rem;
+    bottom: 1rem;
+    right: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .project__icon {
+        width: 10rem; } }
 
 .contact {
   position: relative;

@@ -82,10 +82,14 @@
         }
     }
 
-    // &__icon {
-    //     position: absolute;
-    //     width: 15rem;
-    //     bottom: 0;
-    //     right: 0;
-    // }
+    &__icon {
+        position: absolute;
+        width: 15rem;
+        bottom: 1rem;
+        right: 1rem;
+
+        @media only screen and (max-width: $bp-900) {
+            width: 10rem;
+        }
+    }
 }
