@@ -55,4 +55,11 @@
             filter: brightness(100%);
         }
     }
+
+    &__icon {
+        position: absolute;
+        width: 15rem;
+        bottom: 0;
+        right: 0;
+    }
 }
