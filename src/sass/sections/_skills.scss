@@ -2,6 +2,7 @@
     background-color: $color-secondary-dark;
     display: flex;
     align-items: center;
+    position: relative;
     // width: 88%;
     // background-color: grey;
     .container {
@@ -22,12 +23,42 @@
             grid-column-gap: 3rem;
             grid-row-gap: 5rem;
         }
+
+        @media only screen and (max-width: $bp-600) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-400) {
+            display: flex;
+            flex-direction: column;
+            margin: 0 3rem;
+        }
+    }
+
+    &__icon {
+        display: none;
+
+        @media only screen and (max-width: $bp-400) {
+            display: block;
+            position: absolute;
+            width: 15rem;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
 
 .skill {
 
     height: 100%;
+
+
+    @media only screen and (max-width: $bp-400) {
+        width: 100%;
+    }
 
     &__title {
         display: flex;
@@ -38,7 +69,12 @@
 
         @media only screen and (max-width: $bp-900) {
             height: 30%;
-            margin-bottom: .5rem;
+            margin-bottom: .8rem;
+        }
+
+        @media only screen and (max-width: $bp-400) {
+            height: auto;
+            margin-bottom: 2rem;
         }
     }
 
@@ -48,6 +84,16 @@
         @media only screen and (max-width: $bp-900) {
             width: 3rem;
         }
+
+        @media only screen and (max-width: $bp-600) {
+            width: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-400) {
+            order: 2;
+        }
+
+        
     }
 
     &__name {
@@ -58,6 +104,10 @@
 
         @media only screen and (max-width: $bp-900) {
             font-size: 1.4rem;
+        }
+
+        @media only screen and (max-width: $bp-400) {
+            font-weight: 200;
         }
     }
 
@@ -72,6 +122,10 @@
         @media only screen and (max-width: $bp-900) {
             font-size: 1.2rem;
             height: 70%;
+        }
+
+        @media only screen and (max-width: $bp-400) {
+            display: none;
         }
     }
 }

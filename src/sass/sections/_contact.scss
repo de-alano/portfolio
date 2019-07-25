@@ -18,5 +18,11 @@
             left: calc(100% - 17rem);     
             transform: translateY(0);
         }
+
+        @media only screen and (max-width: $bp-400) {
+            width: 12rem;
+            top: calc(100% - 14rem);
+            left: calc(100% - 14rem);
+        }
     }
 }

@@ -6,6 +6,11 @@
         @media only screen and (max-width: $bp-900) {
             width: 60%;
         }
+
+        @media only screen and (max-width: $bp-400) {
+            width: 80%;
+        }
+
     }
 
     &__heading {
@@ -49,6 +54,11 @@
         @media only screen and (max-width: $bp-900) {
             font-size: 1.3rem;
         }
+
+        @media only screen and (max-width: $bp-400) {
+            width: 85%;
+        }
+
 
         &__area {
             resize: none;

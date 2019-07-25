@@ -20,6 +20,10 @@
     @media only screen and (max-width: $bp-900) {
         font-size: 1.5rem;
     }
+
+    @media only screen and (max-width: $bp-600) {
+        font-size: 1.3rem;
+    }
 }
 
 .btn--secondary {
@@ -29,5 +33,9 @@
 
     @media only screen and (max-width: $bp-900) {
         font-size: 1.3rem;
+    }
+
+    @media only screen and (max-width: $bp-600) {
+        font-size: 1.2rem;
     }
 }
