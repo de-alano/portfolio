@@ -640,17 +640,20 @@ body {
   position: relative; }
   @media only screen and (max-width: 56.25em) {
     .swiper-container {
-      height: 500vh; } }
+      height: 100vh; } }
   @media only screen and (max-width: 56.25em) {
     .swiper-container .swiper-wrapper {
       height: 100%;
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      scroll-snap-type: y mandatory;
+      overflow: auto; } }
   .swiper-container .swiper-slide {
     position: relative; }
     @media only screen and (max-width: 56.25em) {
       .swiper-container .swiper-slide {
-        height: 100vh; } }
+        height: 100vh;
+        scroll-snap-align: start; } }
   .swiper-container .swiper-pagination {
     display: none; }
   .swiper-container .swiper-button-prev, .swiper-container .swiper-button-next {
