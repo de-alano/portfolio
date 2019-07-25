@@ -352,10 +352,8 @@ body {
     @media only screen and (max-width: 37.5em) {
       .about__text {
         width: 80%;
-        margin-top: 1.5rem; } }
-    @media only screen and (max-width: 25em) {
-      .about__text {
-        width: 90%; } }
+        margin-top: 1.5rem;
+        display: none; } }
   .about__personal-table {
     width: 80%; }
     @media only screen and (max-width: 56.25em) {
@@ -375,6 +373,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .about__personal-pair {
         font-size: 1.4rem; } }
+    @media only screen and (max-width: 25em) {
+      .about__personal-pair {
+        font-size: 1.2rem; } }
   .about__personal-key {
     color: #ffffff;
     width: 50%; }
@@ -389,7 +390,7 @@ body {
         margin-top: 4rem; } }
     @media only screen and (max-width: 25em) {
       .about__cv {
-        margin-top: 2rem; } }
+        margin-top: 5rem; } }
     .about__cv:hover {
       background-color: #00a9b9; }
   .about__circle-gradient {
@@ -980,6 +981,15 @@ body {
     position: relative;
     padding: .8rem 0;
     transition: color .5s; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__link {
+        font-size: 2.2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__link {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .navigation__link {
+        font-size: 1.8rem; } }
     .navigation__link::before, .navigation__link::after {
       content: '';
       width: 100%;

@@ -96,11 +96,18 @@ menuIcon.addEventListener('click', () => {
 	nav.classList.toggle('change');
 });
 
-// navLinks.forEach(link => {
-// 	link.addEventListener('click', () => {
-// 		nav.classList.remove('change');
-// 	});
-// });
+navLinks.forEach(link => {
+	link.addEventListener('click', () => {
+		nav.classList.remove('change');
+		menuIcon.classList.remove('change');
+	});
+});
+
+// INITIALIZE SMOOTH SCROLL
+const scroll = new SmoothScroll('.navigation a[href*="#"]', {
+	speed: 700
+});
+
 
 
 // PRELOADER
