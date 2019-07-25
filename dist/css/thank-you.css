@@ -9,7 +9,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; }
 
 .btn {
   padding: 1rem 2rem;
@@ -20,15 +21,30 @@ body {
   letter-spacing: 1px;
   border-radius: 2rem;
   text-decoration: none; }
+  @media only screen and (max-width: 56.25em) {
+    .btn {
+      padding: .8rem 1.5rem; } }
 
 .btn--primary {
   border: none;
   font-size: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .btn--primary {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .btn--primary {
+      font-size: 1.3rem; } }
 
 .btn--secondary {
   border: 1px solid #263137;
   background-color: transparent;
   font-size: 1.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .btn--secondary {
+      font-size: 1.3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .btn--secondary {
+      font-size: 1.2rem; } }
 
 body {
   width: 100%;
@@ -42,6 +58,18 @@ body {
   width: 50%;
   height: 70vh;
   box-shadow: 0 2rem 3rem rgba(255, 255, 255, 0.1); }
+  @media only screen and (max-width: 56.25em) {
+    .thanks {
+      width: 70%;
+      height: 60vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .thanks {
+      width: 80%;
+      height: 50vh; } }
+  @media only screen and (max-width: 25em) {
+    .thanks {
+      width: 85%;
+      height: 40vh; } }
   .thanks .top {
     height: 50%;
     background-color: #263137;
@@ -59,6 +87,9 @@ body {
   .thanks__checkmark {
     width: 15rem;
     margin: 0 auto; }
+    @media only screen and (max-width: 37.5em) {
+      .thanks__checkmark {
+        width: 10rem; } }
   .thanks__text {
     display: flex;
     flex-direction: column;
@@ -69,18 +100,36 @@ body {
     font-size: 3rem;
     margin-bottom: .5rem;
     animation: text .5s linear .5s both; }
+    @media only screen and (max-width: 56.25em) {
+      .thanks__heading {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .thanks__heading {
+        font-size: 2rem; } }
   .thanks__paragraph {
     color: #263137;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
     opacity: 0;
     animation: text .5s linear 1s both; }
+    @media only screen and (max-width: 56.25em) {
+      .thanks__paragraph {
+        font-size: 1.3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .thanks__paragraph {
+        font-size: 1.2rem; } }
   .thanks .back {
     background-color: #3c494f;
     text-transform: capitalize;
     font-size: 1.4rem;
     transition: background-color .6s ease-out;
     animation: button .5s linear 1.5s both; }
+    @media only screen and (max-width: 56.25em) {
+      .thanks .back {
+        font-size: 1.3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .thanks .back {
+        font-size: 1.2rem; } }
     .thanks .back:hover {
       background-color: #00a9b9; }
 
