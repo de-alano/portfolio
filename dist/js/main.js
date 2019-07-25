@@ -96,11 +96,11 @@ menuIcon.addEventListener('click', () => {
 	nav.classList.toggle('change');
 });
 
-// navLinks.forEach(link => {
-// 	link.addEventListener('click', () => {
-// 		nav.classList.remove('change');
-// 	});
-// });
+navLinks.forEach(link => {
+	link.addEventListener('click', () => {
+		nav.classList.remove('change');
+	});
+});
 
 
 // PRELOADER
