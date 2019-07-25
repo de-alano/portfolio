@@ -119,11 +119,12 @@
         @media only screen and (max-width: $bp-600) {
             width: 80%;
             margin-top: 1.5rem;
+            display: none;
         }
 
-        @media only screen and (max-width: $bp-400) {
-            width: 90%;
-        }
+        // @media only screen and (max-width: $bp-400) {
+        //     display: none;
+        // }
     }
 
     &__personal-table {
@@ -151,6 +152,10 @@
         @media only screen and (max-width: $bp-900) {
             font-size: 1.4rem;
         }
+
+        @media only screen and (max-width: $bp-400) {
+            font-size: 1.2rem;
+        }
     }
 
     &__personal-key {
@@ -172,7 +177,7 @@
         }
 
         @media only screen and (max-width: $bp-400) {
-            margin-top: 2rem;
+            margin-top: 5rem;
         }
 
         &:hover {
