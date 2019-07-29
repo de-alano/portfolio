@@ -108,6 +108,25 @@ const scroll = new SmoothScroll('.navigation a[href*="#"]', {
 	speed: 700
 });
 
+// INITIALIZE ANIMATE ON SCROLL ON WIDTH <= 900px
+const width = window.innerWidth;
+let scrollAnimations;
+
+// if ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) <= 900) {
+// 	scrollAnimations = sal({
+// 		disabled: false,
+// 		once: false,
+// 		treshold: 1
+// 	});
+// } else {
+// 	scrollAnimations = sal({
+// 		disabled: true
+// 	});
+// }
+
+scrollAnimations = sal({
+	once: false
+});
 
 
 // PRELOADER
@@ -117,3 +136,4 @@ window.addEventListener('load', () => {
 		preloader.classList.add('loader-finish');
 	}, 2000);
 });
+
