@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Montserrat:200,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/flickity.min.css">
+    <link rel="stylesheet" href="css/sal.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -119,11 +120,15 @@
             <section class="about swiper-slide" id="about" data-section="About Me">
                 <h4 class="about__title section-title">About Me</h4>
                 <div class="about__general">
-                    <div class="about__photo-container">
+                    <div class="about__photo-container" data-sal="slide-down" data-sal-duration="800"
+                        data-sal-delay="200">
                         <div class="about__photo about__photo--front">&nbsp;</div>
                         <div class="about__photo about__photo--back">&nbsp;</div>
                     </div>
-                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laboriosam
+                    <p class="about__text" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">Lorem ipsum
+                        dolor sit amet
+                        consectetur adipisicing elit.
+                        Impedit laboriosam
                         animi velit ab reiciendis. Obcaecati, laborum? Animi magni consectetur illo eos delectus
                         voluptas vero nulla et perspiciatis non! Vitae, voluptatum! Lorem ipsum, dolor sit amet
                         consectetur adipisicing elit. Blanditiis eos doloribus praesentium reiciendis debitis,
@@ -132,7 +137,8 @@
                 </div>
 
                 <div class="about__personal">
-                    <table class="about__personal-table">
+                    <table class="about__personal-table" data-sal="slide-left" data-sal-duration="800"
+                        data-sal-delay="400">
                         <tbody>
                             <tr class="about__personal-pair">
                                 <td class="about__personal-key">Name:</td>
@@ -156,7 +162,8 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="" class="about__cv btn btn--secondary">Download CV</a>
+                    <a href="#" class="about__cv btn btn--secondary">Download CV</a>
+
                     <div class="about__personal-icons">
                         <img src="images/icons/creative.svg" alt="Creative Icon" class="about__personal-icon">
                         <img src="images/icons/punctual.svg" alt="Punctual Icon" class="about__personal-icon">
@@ -171,7 +178,7 @@
             <section class="skills swiper-slide" id="skills" data-section="Skills">
                 <h4 class="skills__title section-title">Skills</h4>
                 <div class="container">
-                    <div class="skill">
+                    <div class="skill" data-sal="fade" data-sal-duration="800" data-sal-delay="200">
                         <div class="skill__title">
                             <img src="images/icons/html.svg" alt="HTML and CSS" class="skill__icon">
                             <h4 class="skill__name">HTML5/CSS3</h4>
@@ -180,7 +187,7 @@
                             libero in exercitationem sequi perspiciatis laudantium. Et repellendus dolores nostrum a
                             aliquam reiciendis.</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-sal="fade" data-sal-duration="800" data-sal-delay="300">
                         <div class="skill__title">
                             <img src="images/icons/sass.svg" alt="Sass" class="skill__icon">
                             <h4 class="skill__name">CSS Preprocessor</h4>
@@ -189,7 +196,7 @@
                             libero in exercitationem sequi perspiciatis laudantium. Et repellendus dolores nostrum a
                             aliquam reiciendis.</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-sal="fade" data-sal-duration="800" data-sal-delay="400">
                         <div class="skill__title">
                             <img src="images/icons/bootstrap.svg" alt="Bootstrap" class="skill__icon">
                             <h4 class="skill__name">CSS Frameworks</h4>
@@ -198,7 +205,7 @@
                             libero in exercitationem sequi perspiciatis laudantium. Et repellendus dolores nostrum a
                             aliquam reiciendis.</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-sal="fade" data-sal-duration="800" data-sal-delay="500">
                         <div class="skill__title">
                             <img src="images/icons/js.svg" alt="JavaScript" class="skill__icon">
                             <h4 class="skill__name">JavaScript</h4>
@@ -207,7 +214,7 @@
                             libero in exercitationem sequi perspiciatis laudantium. Et repellendus dolores nostrum a
                             aliquam reiciendis.</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-sal="fade" data-sal-duration="800" data-sal-delay="600">
                         <div class="skill__title">
                             <img src="images/icons/react.svg" alt="React" class="skill__icon">
                             <h4 class="skill__name">React</h4>
@@ -216,7 +223,7 @@
                             libero in exercitationem sequi perspiciatis laudantium. Et repellendus dolores nostrum a
                             aliquam reiciendis.</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-sal="fade" data-sal-duration="800" data-sal-delay="700">
                         <div class="skill__title">
                             <img src="images/icons/git.svg" alt="Git" class="skill__icon">
                             <h4 class="skill__name">Git</h4>
@@ -225,7 +232,7 @@
                             libero in exercitationem sequi perspiciatis laudantium. Et repellendus dolores nostrum a
                             aliquam reiciendis.</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-sal="fade" data-sal-duration="800" data-sal-delay="800">
                         <div class="skill__title">
                             <img src="images/icons/npm.svg" alt="NPM" class="skill__icon">
                             <h4 class="skill__name">NPM</h4>
@@ -234,7 +241,7 @@
                             libero in exercitationem sequi perspiciatis laudantium. Et repellendus dolores nostrum a
                             aliquam reiciendis.</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-sal="fade" data-sal-duration="800" data-sal-delay="900">
                         <div class="skill__title">
                             <img src="images/icons/responsive.svg" alt="Responsive Design" class="skill__icon">
                             <h4 class="skill__name">Responsive Design</h4>
@@ -243,7 +250,7 @@
                             libero in exercitationem sequi perspiciatis laudantium. Et repellendus dolores nostrum a
                             aliquam reiciendis.</p>
                     </div>
-                    <div class="skill">
+                    <div class="skill" data-sal="fade" data-sal-duration="800" data-sal-delay="1000">
                         <div class="skill__title">
                             <img src="images/icons/terminal.svg" alt="Command Line" class="skill__icon">
                             <h4 class="skill__name">Command Line</h4>
@@ -263,15 +270,19 @@
                 <h4 class="projects__title section-title">Projects</h4>
                 <div class="projects-gallery">
                     <div class="project gallery-cell">
-                        <h3 class="project__title">Bookmark App</h3>
-                        <img src="images/icons/bookmark.svg" class="project__icon" alt="">
+                        <h3 class="project__title" data-sal="slide-down" data-sal-duration="800" data-sal-delay="200">
+                            Bookmark App</h3>
+                        <img src="images/icons/bookmark.svg" class="project__icon" alt="Bookmark Icon" data-sal="fade"
+                            data-sal-duration="800" data-sal-delay="1000">
                         <div class="project__demo">
-                            <img src="images/bookmark-desktop.png" alt=""
-                                class="project__image project__image--desktop">
-                            <img src="images/bookmark-mobile.png" alt="" class="project__image project__image--mobile">
+                            <img src="images/bookmark-desktop.png" alt="" class="project__image project__image--desktop"
+                                data-sal="zoom-in" data-sal-duration="800" data-sal-delay="400">
+                            <img src="images/bookmark-mobile.png" alt="" class="project__image project__image--mobile"
+                                data-sal="zoom-in" data-sal-duration="800" data-sal-delay="600">
                         </div>
-                        <h4 class="project__description">Check weather in your city</h4>
-                        <div class="project__links">
+                        <h4 class="project__description" data-sal="slide-up" data-sal-duration="800"
+                            data-sal-delay="800">Check weather in your city</h4>
+                        <div class="project__links" data-sal="slide-up" data-sal-duration="800" data-sal-delay="800">
                             <a href="" class="project__link"><img src="images/icons/github.svg" alt=""
                                     class="project__link-icon"></a>
                             <a href="" class="project__link"><img src="images/icons/demo.svg" alt=""
@@ -280,14 +291,19 @@
                     </div>
 
                     <div class="project gallery-cell">
-                        <h3 class="project__title">Weather App</h3>
-                        <img src="images/icons/weather.svg" class="project__icon" alt="">
+                        <h3 class="project__title" data-sal="slide-down" data-sal-duration="800" data-sal-delay="200">
+                            Weather App</h3>
+                        <img src="images/icons/weather.svg" class="project__icon" alt="Weather Icon" data-sal="fade"
+                            data-sal-duration="800" data-sal-delay="1000">
                         <div class="project__demo">
-                            <img src="images/weather-desktop.png" alt="" class="project__image project__image--desktop">
-                            <img src="images/weather-mobile.png" alt="" class="project__image project__image--mobile">
+                            <img src="images/weather-desktop.png" alt="" class="project__image project__image--desktop"
+                                data-sal="zoom-in" data-sal-duration="800" data-sal-delay="400">
+                            <img src="images/weather-mobile.png" alt="" class="project__image project__image--mobile"
+                                data-sal="zoom-in" data-sal-duration="800" data-sal-delay="600">
                         </div>
-                        <h4 class="project__description">Check weather in your city</h4>
-                        <div class="project__links">
+                        <h4 class="project__description" data-sal="slide-up" data-sal-duration="800"
+                            data-sal-delay="800">Check weather in your city</h4>
+                        <div class="project__links" data-sal="slide-up" data-sal-duration="800" data-sal-delay="800">
                             <a href="" class="project__link"><img src="images/icons/github.svg" alt=""
                                     class="project__link-icon"></a>
                             <a href="" class="project__link"><img src="images/icons/demo.svg" alt=""
@@ -296,15 +312,20 @@
                     </div>
 
                     <div class="project gallery-cell">
-                        <h3 class="project__title">Speedway Generator</h3>
-                        <img src="images/icons/generator.svg" class="project__icon" alt="">
+                        <h3 class="project__title" data-sal="slide-down" data-sal-duration="800" data-sal-delay="200">
+                            Speedway Generator</h3>
+                        <img src="images/icons/generator.svg" class="project__icon" alt="Speedway Icon" data-sal="fade"
+                            data-sal-duration="800" data-sal-delay="1000">
                         <div class="project__demo">
                             <img src="images/generator-desktop.png" alt=""
-                                class="project__image project__image--desktop">
-                            <img src="images/generator-mobile.png" alt="" class="project__image project__image--mobile">
+                                class="project__image project__image--desktop" data-sal="zoom-in"
+                                data-sal-duration="800" data-sal-delay="400">
+                            <img src="images/generator-mobile.png" alt="" class="project__image project__image--mobile"
+                                data-sal="zoom-in" data-sal-duration="800" data-sal-delay="600">
                         </div>
-                        <h4 class="project__description">Check weather in your city</h4>
-                        <div class="project__links">
+                        <h4 class="project__description" data-sal="slide-up" data-sal-duration="800"
+                            data-sal-delay="800">Check weather in your city</h4>
+                        <div class="project__links" data-sal="slide-up" data-sal-duration="800" data-sal-delay="800">
                             <a href="" class="project__link"><img src="images/icons/github.svg" alt=""
                                     class="project__link-icon"></a>
                             <a href="" class="project__link"><img src="images/icons/demo.svg" alt=""
@@ -313,14 +334,19 @@
                     </div>
 
                     <div class="project gallery-cell">
-                        <h3 class="project__title">Wallet App</h3>
-                        <img src="images/icons/wallet.svg" class="project__icon" alt="">
+                        <h3 class="project__title" data-sal="slide-down" data-sal-duration="800" data-sal-delay="200">
+                            Wallet App</h3>
+                        <img src="images/icons/wallet.svg" class="project__icon" alt="Wallet Icon" data-sal="fade"
+                            data-sal-duration="800" data-sal-delay="1000">
                         <div class="project__demo">
-                            <img src="images/wallet-desktop.png" alt="" class="project__image project__image--desktop">
-                            <img src="images/wallet-mobile.png" alt="" class="project__image project__image--mobile">
+                            <img src="images/wallet-desktop.png" alt="" class="project__image project__image--desktop"
+                                data-sal="zoom-in" data-sal-duration="800" data-sal-delay="400">
+                            <img src="images/wallet-mobile.png" alt="" class="project__image project__image--mobile"
+                                data-sal="zoom-in" data-sal-duration="800" data-sal-delay="600">
                         </div>
-                        <h4 class="project__description">Check weather in your city</h4>
-                        <div class="project__links">
+                        <h4 class="project__description" data-sal="slide-up" data-sal-duration="800"
+                            data-sal-delay="800">Check weather in your city</h4>
+                        <div class="project__links" data-sal="slide-up" data-sal-duration="800" data-sal-delay="800">
                             <a href="" class="project__link"><img src="images/icons/github.svg" alt=""
                                     class="project__link-icon"></a>
                             <a href="" class="project__link"><img src="images/icons/demo.svg" alt=""
@@ -335,31 +361,32 @@
                 <h4 class="contact__title section-title">Contact</h4>
                 <img src="images/icons/paper-plane.svg" alt="Paper Plane" class="contact__icon">
                 <div class="contact__form">
-                    <h2 class="contact__heading">Get in touch</h2>
+                    <h2 class="contact__heading" data-sal="slide-down" data-sal-duration="800" data-sal-delay="200">Get
+                        in touch</h2>
                     <form action="https://www.enformed.io/nmqjw849" method="POST" class="form">
-                        <div class="form__group">
+                        <div class="form__group" data-sal="slide-right" data-sal-duration="800" data-sal-delay="500">
                             <input type="text" name="name" class="form__input" placeholder="Full Name" id="name"
                                 required>
                             <label for="name" class="form__label">Full Name</label>
                         </div>
-                        <div class="form__group">
+                        <div class="form__group" data-sal="slide-left" data-sal-duration="800" data-sal-delay="500">
                             <input type="email" name="e-mail" class="form__input" placeholder="E-mail" id="email"
                                 required>
                             <label for="email" class="form__label">Email</label>
                         </div>
-                        <div class="form__group">
+                        <div class="form__group" data-sal="slide-right" data-sal-duration="800" data-sal-delay="500">
                             <input type="text" name="subject" class="form__input" placeholder="Subject" id="subject"
                                 required>
                             <label for="subject" class="form__label">Subject</label>
                         </div>
-                        <div class="form__group">
+                        <div class="form__group" data-sal="slide-left" data-sal-duration="800" data-sal-delay="500">
                             <textarea name="message" rows="8" class="form__area" id="message" placeholder="Message"
                                 required></textarea>
                             <label for="message" class="form__label">Message</label>
                         </div>
                         <input type="hidden" name="*redirect"
                             value="https://de-alano.github.io/portfolio/thanks.html" />
-                        <div class="form__group">
+                        <div class="form__group" data-sal="slide-up" data-sal-duration="800" data-sal-delay="1000">
                             <button type="submit" class="form__btn btn btn--secondary">Send
                                 e-mail</button>
                         </div>
@@ -379,6 +406,7 @@
     <script src="js/libs/swiper.min.js"></script>
     <script src="js/libs/flickity.pkgd.min.js"></script>
     <script src="js/libs/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/libs/sal.js"></script>
     <script src="js/main.js"></script>
 </body>
 
