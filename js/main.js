@@ -109,7 +109,7 @@ const scroll = new SmoothScroll('.navigation a[href*="#"]', {
 });
 
 // INITIALIZE ANIMATE ON SCROLL ON WIDTH <= 900px
-const width = window.innerWidth;
+// const width = window.innerWidth;
 let scrollAnimations;
 
 // if ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) <= 900) {
@@ -127,6 +127,7 @@ let scrollAnimations;
 scrollAnimations = sal({
 	once: false
 });
+
 
 
 // PRELOADER

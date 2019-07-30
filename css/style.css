@@ -59,7 +59,7 @@ body {
     @media only screen and (max-width: 25em) {
       .hero__caption-wrapper {
         width: 100%;
-        margin: 3.5rem 0 2.5rem 0; } }
+        margin: 1.5rem 0; } }
   .hero__caption {
     font-size: 3rem;
     margin-bottom: .3rem;
@@ -82,6 +82,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .hero__caption--prof {
         font-size: 1.2rem; } }
+    @media only screen and (max-width: 25em) {
+      .hero__caption--prof {
+        margin-bottom: 1.5rem; } }
   .hero__btn {
     position: relative;
     background-image: linear-gradient(to right bottom, #00a9b9, #d7e6e6);
@@ -124,7 +127,6 @@ body {
         right: -10%; } }
     @media only screen and (max-width: 25em) {
       .hero__photo-container {
-        width: 80%;
         right: 0; } }
     .hero__photo-container::before {
       content: '';
@@ -470,7 +472,7 @@ body {
       .skills__icon {
         display: block;
         position: absolute;
-        width: 15rem;
+        width: 10rem;
         bottom: 1rem;
         left: 50%;
         transform: translateX(-50%); } }
@@ -642,9 +644,9 @@ body {
         transform: translateY(0); } }
     @media only screen and (max-width: 25em) {
       .contact__icon {
-        width: 12rem;
-        top: calc(100% - 14rem);
-        left: calc(100% - 14rem); } }
+        width: 10rem;
+        top: calc(100% - 12rem);
+        left: calc(100% - 12rem); } }
 
 .swiper-container {
   width: 100%;
