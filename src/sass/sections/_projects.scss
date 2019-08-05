@@ -25,6 +25,10 @@
             margin-bottom: 3rem;
         }
 
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            font-size: 2rem;
+        }
+
         @media only screen and (max-width: $bp-600) {
             font-size: 2rem;
         }
@@ -118,6 +122,10 @@
 
         @media only screen and (max-width: $bp-900) {
             width: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            display: none;
         }
 
         @media only screen and (max-width: $bp-600) {

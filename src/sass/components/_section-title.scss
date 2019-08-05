@@ -10,6 +10,10 @@
         font-size: 8rem;
     }
 
+    @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+        display: none;
+    }
+
     @media only screen and (max-width: $bp-600) {
         font-size: 6.5rem;
         width: 100%;

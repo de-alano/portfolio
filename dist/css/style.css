@@ -33,6 +33,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .hero__slogan {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        margin-left: 0; } }
     @media only screen and (max-width: 25em) {
       .hero__slogan {
         width: 100%;
@@ -44,6 +50,9 @@ body {
     font-weight: 900;
     letter-spacing: 3px;
     color: #ffffff; }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .hero__slogan-text:not(:last-child) {
+        margin-right: 2rem; } }
     @media only screen and (max-width: 56.25em) {
       .hero__slogan-text {
         font-size: 6.5rem; } }
@@ -56,6 +65,9 @@ body {
     color: #ffffff;
     text-align: center;
     width: 45%; }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .hero__caption-wrapper {
+        margin: 2rem 0 2rem 3rem; } }
     @media only screen and (max-width: 25em) {
       .hero__caption-wrapper {
         width: 100%;
@@ -79,6 +91,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .hero__caption--prof {
         font-size: 1.3rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .hero__caption--prof {
+        margin-bottom: 2rem; } }
     @media only screen and (max-width: 37.5em) {
       .hero__caption--prof {
         font-size: 1.2rem; } }
@@ -121,6 +136,10 @@ body {
       .hero__photo-container {
         width: 60%;
         right: -5%; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .hero__photo-container {
+        width: 35%;
+        right: 0; } }
     @media only screen and (max-width: 37.5em) {
       .hero__photo-container {
         width: 70%;
@@ -151,6 +170,10 @@ body {
         .hero__photo-container::before {
           width: 35rem;
           height: 35rem; } }
+      @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+        .hero__photo-container::before {
+          width: 20rem;
+          height: 20rem; } }
       @media only screen and (max-width: 37.5em) {
         .hero__photo-container::before {
           width: 30rem;
@@ -223,6 +246,9 @@ body {
       top: 5%;
       left: 40%;
       width: 15rem; }
+      @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+        .hero__circle-gradient--2 {
+          display: none; } }
       @media only screen and (max-width: 56.25em) {
         .hero__circle-gradient--2 {
           left: 50%;
@@ -248,6 +274,9 @@ body {
   background-color: #3c494f;
   border-bottom: 3px solid rgba(38, 49, 55, 0.4);
   position: relative; }
+  @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+    .top {
+      height: 50%; } }
   @media only screen and (max-width: 37.5em) {
     .top {
       height: 50%; } }
@@ -261,6 +290,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+  @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+    .bottom {
+      height: 50%; } }
   @media only screen and (max-width: 56.25em) {
     .bottom {
       justify-content: space-between; } }
@@ -280,6 +312,9 @@ body {
     .about {
       flex-direction: column;
       justify-content: space-evenly; } }
+  @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+    .about {
+      flex-direction: row; } }
   .about__general {
     width: 44%;
     height: 100%;
@@ -294,6 +329,11 @@ body {
         justify-content: space-around;
         margin-top: 3rem;
         height: auto; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .about__general {
+        width: 40%;
+        margin: 0;
+        justify-content: center; } }
     @media only screen and (max-width: 37.5em) {
       .about__general {
         flex-direction: column;
@@ -312,6 +352,9 @@ body {
         height: auto;
         position: static;
         margin-top: -7rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .about__personal {
+        margin: 0 3rem; } }
   .about__photo-container {
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -322,6 +365,11 @@ body {
       .about__photo-container {
         height: 21.76rem;
         width: 20.48rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .about__photo-container {
+        height: 18.5rem;
+        width: 16.38rem;
+        margin-left: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .about__photo-container {
         height: 18.5rem;
@@ -362,6 +410,9 @@ body {
         width: 60%;
         padding: 0;
         font-size: 1.3rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .about__text {
+        display: none; } }
     @media only screen and (max-width: 37.5em) {
       .about__text {
         width: 80%;
@@ -373,6 +424,9 @@ body {
       .about__personal-table {
         width: 50%;
         margin: 0 auto; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .about__personal-table {
+        width: 100%; } }
     @media only screen and (max-width: 37.5em) {
       .about__personal-table {
         width: 80%; } }
@@ -401,6 +455,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .about__cv {
         margin-top: 4rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .about__cv {
+        margin-top: 2rem; } }
     @media only screen and (max-width: 25em) {
       .about__cv {
         margin-top: 5rem; } }
@@ -431,6 +488,9 @@ body {
       .about__personal-icon {
         width: 7rem;
         bottom: 0; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .about__personal-icon {
+        width: 5rem; } }
     @media only screen and (max-width: 25em) {
       .about__personal-icon {
         width: 5rem; } }
@@ -441,21 +501,27 @@ body {
   align-items: center;
   position: relative; }
   .skills .container {
-    width: 88%;
-    max-width: 120rem;
-    margin-left: 5rem;
+    width: calc(88% - 10rem);
+    max-width: 160rem;
+    margin: 0 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 5rem;
     grid-row-gap: 5rem;
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    justify-content: center;
+    align-content: center; }
     @media only screen and (max-width: 56.25em) {
       .skills .container {
         width: 100%;
         margin: 0 2rem;
         grid-column-gap: 3rem;
         grid-row-gap: 5rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .skills .container {
+        grid-column-gap: 2rem;
+        grid-row-gap: 4rem; } }
     @media only screen and (max-width: 37.5em) {
       .skills .container {
         grid-template-columns: 1fr;
@@ -492,6 +558,10 @@ body {
       .skill__title {
         height: 30%;
         margin-bottom: .8rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .skill__title {
+        flex-direction: column;
+        height: 100%; } }
     @media only screen and (max-width: 25em) {
       .skill__title {
         height: auto;
@@ -501,6 +571,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .skill__icon {
         width: 3rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .skill__icon {
+        width: 2rem; } }
     @media only screen and (max-width: 37.5em) {
       .skill__icon {
         width: 2.5rem; } }
@@ -515,6 +588,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .skill__name {
         font-size: 1.4rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .skill__name {
+        font-size: 1.3rem; } }
     @media only screen and (max-width: 25em) {
       .skill__name {
         font-weight: 200; } }
@@ -528,6 +604,9 @@ body {
       .skill__description {
         font-size: 1.2rem;
         height: 70%; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .skill__description {
+        display: none; } }
     @media only screen and (max-width: 25em) {
       .skill__description {
         display: none; } }
@@ -554,6 +633,9 @@ body {
       .project__title {
         font-size: 2.5rem;
         margin-bottom: 3rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .project__title {
+        font-size: 2rem; } }
     @media only screen and (max-width: 37.5em) {
       .project__title {
         font-size: 2rem; } }
@@ -620,6 +702,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .project__icon {
         width: 10rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .project__icon {
+        display: none; } }
     @media only screen and (max-width: 37.5em) {
       .project__icon {
         width: 7rem; } }
@@ -642,6 +727,9 @@ body {
         top: calc(100% - 17rem);
         left: calc(100% - 17rem);
         transform: translateY(0); } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .contact__icon {
+        display: none; } }
     @media only screen and (max-width: 25em) {
       .contact__icon {
         width: 10rem;
@@ -767,6 +855,9 @@ body {
     .section-title {
       right: 6rem;
       font-size: 8rem; } }
+  @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+    .section-title {
+      display: none; } }
   @media only screen and (max-width: 37.5em) {
     .section-title {
       font-size: 6.5rem;
@@ -822,6 +913,10 @@ body {
   @media only screen and (max-width: 56.25em) {
     .contact__form {
       width: 60%; } }
+  @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+    .contact__form {
+      width: 100%;
+      text-align: center; } }
   @media only screen and (max-width: 25em) {
     .contact__form {
       width: 80%; } }
@@ -835,6 +930,19 @@ body {
   @media only screen and (max-width: 56.25em) {
     .contact__heading {
       font-size: 3rem; } }
+  @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+    .contact__heading {
+      margin-bottom: 2rem; } }
+
+@media only screen and (max-width: 56.25em) and (orientation: landscape) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; } }
 
 .form__group {
   text-align: center; }
@@ -843,6 +951,34 @@ body {
     @media only screen and (max-width: 56.25em) {
       .form__group:not(:last-child) {
         margin-bottom: 1.5rem; } }
+    @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+      .form__group:not(:last-child) {
+        margin-bottom: 1rem; } }
+
+@media only screen and (max-width: 56.25em) and (orientation: landscape) {
+  .form__group:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/2; } }
+
+@media only screen and (max-width: 56.25em) and (orientation: landscape) {
+  .form__group:nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 1/2; } }
+
+@media only screen and (max-width: 56.25em) and (orientation: landscape) {
+  .form__group:nth-child(3) {
+    grid-row: 3/4;
+    grid-column: 1/2; } }
+
+@media only screen and (max-width: 56.25em) and (orientation: landscape) {
+  .form__group:nth-child(4) {
+    grid-row: 1/3;
+    grid-column: 2/3; } }
+
+@media only screen and (max-width: 56.25em) and (orientation: landscape) {
+  .form__group:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 3/4; } }
 
 .form__input, .form__area {
   font-size: 1.5rem;
@@ -857,17 +993,22 @@ body {
   @media only screen and (max-width: 56.25em) {
     .form__input, .form__area {
       font-size: 1.3rem; } }
+  @media only screen and (max-width: 56.25em) and (orientation: landscape) {
+    .form__input, .form__area {
+      width: 22rem; } }
   @media only screen and (max-width: 25em) {
     .form__input, .form__area {
       width: 85%; } }
-  .form__input__area, .form__area__area {
-    resize: none; }
   .form__input:focus, .form__area:focus {
     outline: none;
     box-shadow: 0 1rem 1.5rem rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid #00a9b9; }
   .form__input::-webkit-input-placeholder, .form__area::-webkit-input-placeholder {
     color: rgba(215, 230, 230, 0.3); }
+
+.form__area {
+  resize: none;
+  height: 8em; }
 
 .form__label {
   font-size: 1.2rem;
@@ -888,7 +1029,8 @@ body {
 .form__btn {
   border: 1px solid #3c494f;
   transition: background-color .6s ease-out;
-  outline: none; }
+  outline: none;
+  display: block; }
   .form__btn:hover {
     background-color: #00a9b9; }
 

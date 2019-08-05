@@ -6,9 +6,13 @@
     // width: 88%;
     // background-color: grey;
     .container {
-        width: 88%;
-        max-width: 120rem;
-        margin-left: 5rem;
+        width: calc(88% - 10rem);
+        // max-width: 150rem;
+        // margin: 0 auto;
+        max-width: 160rem;
+        margin: 0 5rem;
+        // margin-left: 5rem;
+        // margin-right: calc();
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -16,12 +20,24 @@
         grid-row-gap: 5rem;
         justify-items: center;
         align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        // @media only screen and (min-width: $bp-1600) {
+        //     width: 88%;
+        //     // margin: 0 12%
+        // }
 
         @media only screen and (max-width: $bp-900) {
             width: 100%;
             margin: 0 2rem;
             grid-column-gap: 3rem;
             grid-row-gap: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            grid-column-gap: 2rem;
+            grid-row-gap: 4rem;
         }
 
         @media only screen and (max-width: $bp-600) {
@@ -72,6 +88,11 @@
             margin-bottom: .8rem;
         }
 
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            flex-direction: column;
+            height: 100%;
+        }
+
         @media only screen and (max-width: $bp-400) {
             height: auto;
             margin-bottom: 2rem;
@@ -83,6 +104,10 @@
 
         @media only screen and (max-width: $bp-900) {
             width: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            width: 2rem;
         }
 
         @media only screen and (max-width: $bp-600) {
@@ -106,6 +131,10 @@
             font-size: 1.4rem;
         }
 
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            font-size: 1.3rem;
+        }
+
         @media only screen and (max-width: $bp-400) {
             font-weight: 200;
         }
@@ -122,6 +151,10 @@
         @media only screen and (max-width: $bp-900) {
             font-size: 1.2rem;
             height: 70%;
+        }
+
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            display: none;
         }
 
         @media only screen and (max-width: $bp-400) {

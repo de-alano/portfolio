@@ -11,6 +11,13 @@
         flex-direction: column;
         justify-content: center;
 
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            margin-left: 0;
+        }
+
         @media only screen and (max-width: $bp-400) {
             width: 100%;
             margin-left: 0;
@@ -25,6 +32,12 @@
         font-weight: 900;
         letter-spacing: 3px;
         color: $color-white;
+
+        &:not(:last-child) {
+            @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+                margin-right: 2rem;
+            }
+        }
 
         @media only screen and (max-width: $bp-900) {
             font-size: 6.5rem;
@@ -41,6 +54,10 @@
         color: $color-white;
         text-align: center;
         width: 45%;
+
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            margin: 2rem 0 2rem 3rem;
+        }
 
         @media only screen and (max-width: $bp-400) {
             width: 100%;
@@ -71,6 +88,10 @@
 
         @media only screen and (max-width: $bp-900) {
             font-size: 1.3rem;
+        }
+
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            margin-bottom: 2rem;
         }
 
         @media only screen and (max-width: $bp-600) {
@@ -128,6 +149,11 @@
             right: -5%;
         }
 
+        @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+            width: 35%;
+            right: 0;
+        }
+
         @media only screen and (max-width: $bp-600) {
             width: 70%;
             right: -10%;
@@ -161,6 +187,11 @@
             @media only screen and (max-width: $bp-900) {
                 width: 35rem;
                 height: 35rem;
+            }
+
+            @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+                width: 20rem;
+                height: 20rem;
             }
 
             @media only screen and (max-width: $bp-600) {
@@ -269,6 +300,10 @@
             left: 40%;
             width: 15rem;
 
+            @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+                display: none;
+            }
+
             @media only screen and (max-width: $bp-900) {
                 left: 50%;
                 width: 12rem;
@@ -303,6 +338,10 @@
     border-bottom: 3px solid rgba($color-secondary-dark, .4);
     position: relative;
 
+    @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+        height: 50%;
+    }
+
     @media only screen and (max-width: $bp-600) {
         height: 50%;
     }
@@ -319,6 +358,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    @media only screen and (max-width: $bp-900) and (orientation: landscape) {
+        height: 50%;
+    }
 
     @media only screen and (max-width: $bp-900) {
         justify-content: space-between;
