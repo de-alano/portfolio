@@ -1,4 +1,4 @@
-![Bookmark Logo](https://github.com/de-alano/portfolio/blob/master/dist/images/profile-small.jpg)
+![Portfolio Image](https://github.com/de-alano/portfolio/blob/master/dist/images/profile-small.jpg)
 
 # Portfolio
 
