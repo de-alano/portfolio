@@ -112,11 +112,19 @@
 
         &--front {
             background-image: url('../images/profile.jpg');
+
+            @media only screen and (max-width: $bp-500) {
+                background-image: url('../images/profile-small.jpg');
+            }
         }
 
         &--back {
             transform: rotateY(180deg);
             background-image: url('../images/profile-black.jpg');
+
+            @media only screen and (max-width: $bp-500) {
+                background-image: url('../images/profile-black-small.jpg');
+            }
         }
   
     }
