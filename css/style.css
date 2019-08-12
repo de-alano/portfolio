@@ -1210,40 +1210,6 @@ body {
   top: 0;
   transition: opacity .5s ease; }
 
-.multi-spinner-container {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  overflow: hidden; }
-
-.multi-spinner {
-  position: absolute;
-  width: calc(100% - 9.9px);
-  height: calc(100% - 9.9px);
-  border: 5px solid transparent;
-  border-top-color: #00a9b9;
-  border-radius: 50%;
-  animation: spin 3s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite; }
-
-.multi-spinner.white {
-  border-top-color: white; }
-
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
 .loader-finish {
   opacity: 0;
   pointer-events: none; }
