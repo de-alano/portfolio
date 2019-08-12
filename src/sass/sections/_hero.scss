@@ -104,32 +104,13 @@
     }
 
     &__btn {
-        position: relative;
-        background-image: linear-gradient(to right bottom, $color-primary, $color-tertiary);
-        background-size: 100%;
-        z-index: 10;
+        background-color: $color-primary;
         filter: brightness(90%);
-        transition: filter .6s ease-out;
-
-        &::before {
-            background-image: linear-gradient(to right bottom, $color-tertiary, $color-primary);
-            content: '';
-            display: block;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0; left: 0;
-            opacity: 0;
-            z-index: -10;
-            transition: opacity .6s ease-out;
-            border-radius: 2rem;
-        }
+        transition: filter .4s ease-out, box-shadow .4s ease-out;
 
         &:hover {
             filter: brightness(100%);
-           &::before {
-               opacity: 1;
-           }
+            box-shadow: 0 1rem 1.5rem rgba($color-white, .1);
         }
 
         &:focus, &:active {
