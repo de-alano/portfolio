@@ -69,7 +69,14 @@ const enableSwiper = function () {
 			prevEl: '.swiper-button-prev',
 		},
 	})
+
+	document.querySelector('.hero__btn').addEventListener('click', (e) => {
+		e.preventDefault();
+		mySwiper.slideTo(5, 1500);
+	})
 };
+
+
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -107,6 +114,12 @@ navLinks.forEach(link => {
 const scroll = new SmoothScroll('.navigation a[href*="#"]', {
 	speed: 700
 });
+
+const cta = new SmoothScroll('.hero__caption-wrapper a[href*="#"]', {
+	speed: 700
+});
+
+
 
 // INITIALIZE ANIMATE ON SCROLL ON WIDTH <= 900px
 // const width = window.innerWidth;

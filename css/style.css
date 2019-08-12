@@ -101,29 +101,12 @@ body {
       .hero__caption--prof {
         margin-bottom: 1.5rem; } }
   .hero__btn {
-    position: relative;
-    background-image: linear-gradient(to right bottom, #00a9b9, #d7e6e6);
-    background-size: 100%;
-    z-index: 10;
+    background-color: #00a9b9;
     filter: brightness(90%);
-    transition: filter .6s ease-out; }
-    .hero__btn::before {
-      background-image: linear-gradient(to right bottom, #d7e6e6, #00a9b9);
-      content: '';
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      z-index: -10;
-      transition: opacity .6s ease-out;
-      border-radius: 2rem; }
+    transition: filter .4s ease-out, box-shadow .4s ease-out; }
     .hero__btn:hover {
-      filter: brightness(100%); }
-      .hero__btn:hover::before {
-        opacity: 1; }
+      filter: brightness(100%);
+      box-shadow: 0 1rem 1.5rem rgba(255, 255, 255, 0.1); }
     .hero__btn:focus, .hero__btn:active {
       outline: none; }
   .hero__photo-container {
