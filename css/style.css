@@ -99,7 +99,7 @@ body {
         font-size: 1.2rem; } }
     @media only screen and (max-width: 25em) {
       .hero__caption--prof {
-        margin-bottom: 1.5rem; } }
+        margin-bottom: 3rem; } }
   .hero__btn {
     background-color: #00a9b9;
     filter: brightness(90%);
@@ -495,12 +495,15 @@ body {
     margin: 0 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 5rem;
+    grid-column-gap: 15rem;
     grid-row-gap: 5rem;
-    justify-items: center;
+    justify-items: space-between;
     align-items: center;
     justify-content: center;
     align-content: center; }
+    @media only screen and (max-width: 75em) {
+      .skills .container {
+        grid-column-gap: 8rem; } }
     @media only screen and (max-width: 56.25em) {
       .skills .container {
         width: 100%;
@@ -522,15 +525,15 @@ body {
         flex-direction: column;
         margin: 0 3rem; } }
   .skills__icon {
-    display: none; }
+    display: block;
+    width: 17rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%); }
     @media only screen and (max-width: 25em) {
       .skills__icon {
-        display: block;
-        position: absolute;
-        width: 10rem;
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%); } }
+        width: 10rem; } }
 
 .skill {
   height: 100%; }
@@ -542,7 +545,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
-    height: 40%; }
+    width: 100%; }
     @media only screen and (max-width: 56.25em) {
       .skill__title {
         height: 30%;
