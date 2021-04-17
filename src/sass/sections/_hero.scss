@@ -141,6 +141,7 @@
         }
 
         @media only screen and (max-width: $bp-400) {
+            width: 60%;
             right: 0;
         }
 
@@ -181,8 +182,8 @@
             }
 
             @media only screen and (max-width: $bp-400) {
-                width: 25rem;
-                height: 25rem;
+                width: 20rem;
+                height: 20rem;
             }
         }
     }
